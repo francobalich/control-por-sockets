@@ -9,16 +9,59 @@
     <title>Control por Sockets</title>
 </head>
 <body>
-    <div class="msg" id="msgBox">
-        <div class="userContainer">
-            <img class="userImg" src="img/user.png" alt="logo usuario">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"></a>Control</li>
+                <li><a href="#"></a>Inicio</li>
+                <li><a href="#"></a>Control</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <h1 class="introTitle">Control Robots por Sockets</h1>
+            <p class="introDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consectetur placeat asperiores aliquid ipsum a!</p>
         </div>
-        <div class="textContainer"> 
-            <p class="username" id="txtUsername">Franco</p>
-            <p class="msgText" id="txtText">-</p>
+        <div class="windows">
+            <div class="windowsSimulator">
+                <input class="btnClose" id="windowsSimulator__Btn" type="button" value="-">
+                <div class="windowsSimulator__Container">Interfaz</div>
+            </div>
+            <div class="windowsCode">
+                <input class="btnClose" id="windowsCode__Btn" type="button" value="-">
+                <div class="windowsCode__Container">Proyecto</div>
+            </div>
         </div>
-    </div>
-
+        <div class="controls">
+            <div class="controls_ToMove">
+                <input class="btnMove btnUp" type="button" value="W">
+                <input class="btnMove btnLeft" type="button" value="A">
+                <input class="btnMove btnRight" type="button" value="S">
+                <input class="btnMove btnDown" type="button" value="D">
+            </div>
+            <div class="controls_Stop">
+                <p class="btnStop">Stop</p>
+            </div>
+        </div>
+        <div class="messages">
+            <div class="messagesReceived">
+                <p class="messagesReceived__Title">Mensajes enviados</p>
+                <div class="messagesReceived__Conteiner">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, recusandae?
+                </div>
+            </div>
+            <div class="messagesSended">
+                <p class="messagesSended__Title">Mensajes recibidos</p>
+                <div class="messagesSended__Title">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, recusandae?
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desarrollado por Franco Balich</p>
+    </footer>
     <script src="/socket.io/socket.io.js"></script>
     <script src="js/index.js"></script>
 </body>
