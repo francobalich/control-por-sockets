@@ -3,59 +3,124 @@
     padding: 0;
     margin: 0;
 }
-body{
-    background-color:transparent;
-    width: 1920px;
-    height: 1080px;
+header{
+    background-color: #333;
+    color: #fff;
     display: flex;
+    font-size: 1.3rem;
+
 }
-.msg{
-    position: absolute;
-    right: 50px;
-    bottom: 100px;
-    background-color: #000;
-    display: flex;
-    flex-direction: row;
-    border-radius: 15px;
-    width: 0px;
-    overflow: hidden;
-    transition: width ease 1.2s;
-    opacity: 0.8;
-    box-shadow: -14px 14px 34px -4px rgba(0,0,0,0.4);
-    -webkit-box-shadow: -14px 14px 34px -4px rgba(0,0,0,0.4);
-    -moz-box-shadow: -14px 14px 34px -4px rgba(0,0,0,0.4);
-}
-.msg:hover{
-    width: 600px;
-}
-.userContainer{
-    justify-content: center;
-    display: flex;
-    background-color: white;
-    width: 25%;
-    border-radius: 15px 0 0 15px ;
-}
-.userImg{
-    width: 75px;
-    height: 75px;
-    margin:auto;
-}
-.textContainer{
-    padding: 20px 20px;
-    width: 500px;
-}
-.username{
-    font-weight: bold;
-    color: white;
-    font-size: 2.5rem;
-}
-.msgText{
-    font-size: 1.5rem;
-    color: white;
-    width: 300px;
+header nav{
     width: 100%;
 }
-.emoteContainer{
-    width: 100vw;
+header nav ul{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+header nav ul li{
+    list-style: none;
+    padding: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+.btnInicio{
+    margin-left: auto;
+}
+main{
+    width: 70%;
+    margin:auto;
+}
+.intro{
+    border: 1px solid #666;
+    display: flex;
+    border-radius: 15px;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+}
+.windows{
+    display: flex;
+    justify-content:space-between;
+}
+.windowsSimulator,.windowsCode{
+    border:1px solid #666;
+    width: 34vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    height: 30vw;
+    background-color: #999;
+}
+.btnClose{
+    padding: 0px 7px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+.windowsSimulator__Container,.windowsCode__Container{
+    margin: auto;
+}
+.controls{
+    display: flex;
+}
+.controls_ToMove{
+    display: flex;
+    flex-direction: column;
+    width: 10vw;
+}
+.btnMove{
+    width: 70px;
+    height: 70px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #bbb;
+    border:1px solid #666;
+    border-radius: 7px;
+    margin: 5px auto;
+}
+.containerAD{
+    margin: 4px 0px;
+    display: flex;
+}
+.controls_Stop{
+    display: flex;
+}
+.btnStop{
+    border: 1px solid #900;
+    border-radius: 50%;
+    width: 100px;
     height: 100px;
+    background-color: #f00;
+    font-weight: bold;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+.messages{
+    display: flex;
+    justify-content: space-between;
+}
+.messagesReceived,.messagesSended{
+    width: 34vw;
+    height: 34vw;
+    border-radius: 15px;
+    border:1px solid #666;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.messagesSended__Container,.messagesReceived__Container{
+    width: 80%;
+    height: 90%;
+    border-radius: 15px;
+    border:1px solid #666;
+    padding: 10px;
+    margin: 15px auto;
 }
